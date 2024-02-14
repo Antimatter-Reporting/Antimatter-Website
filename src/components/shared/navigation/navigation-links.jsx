@@ -19,8 +19,8 @@ export function NavigationLinks() {
         <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
-          <Link href="/features" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <Link href="#features" legacyBehavior scroll={true} passHref>
+            <NavigationMenuLink  className={navigationMenuTriggerStyle()}>
               Features
             </NavigationMenuLink>
           </Link>
@@ -40,7 +40,7 @@ export function NavigationLinks() {
                 <NavigationMenuLink asChild>
                   <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="/docs"
                   >
                     <Download className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">

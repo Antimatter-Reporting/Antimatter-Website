@@ -7,6 +7,6 @@ export function CallToAction() {
     const router = useRouter()
 
     return (
-        <Button onClick={() => router.push("/docs")} className="mt-8 mb-10">Get Started for Free</Button>
+        <Button onClick={() => router.push("/docs")}>Get Started for Free</Button>
     )
 }
