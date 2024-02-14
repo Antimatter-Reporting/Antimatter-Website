@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { NavigationLinks } from "./navigation-links"
+import { SocialIcons } from "./social-icons"
 
-import { Ratio, Github, Twitter } from "lucide-react"
+import { Ratio } from "lucide-react"
 
 export default function Navigation() {
     return (
@@ -13,10 +14,7 @@ export default function Navigation() {
             <div>
                 <NavigationLinks />
             </div>
-            <div className="flex flex-row">
-                <Button variant="ghost" size="icon"><Github /></Button>
-                <Button variant="ghost" size="icon"><Twitter /></Button>
-            </div>
+            <SocialIcons />
         </div>
     )
 }

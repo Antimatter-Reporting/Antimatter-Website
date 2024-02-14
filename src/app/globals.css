@@ -76,6 +76,6 @@
 }
 
 .masked-image {
-  -webkit-mask-image: radial-gradient(circle at center, black 0, transparent 90%);
-  mask-image: radial-gradient(circle at center, black 0, transparent 90%);
+  -webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
+  mask-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
 }

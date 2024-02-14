@@ -3,7 +3,7 @@ import { GeistMono } from 'geist/font/mono';
 
 import "./globals.css";
 
-import Navigation from '@/components/shared/navigation';
+import Navigation from '@/components/shared/navigation/navigation';
 
 export const metadata = {
   title: "Antimatter",
