@@ -11,7 +11,8 @@ import {
   } from "@/components/ui/navigation-menu"
 
 import Link from "next/link"
-import { User } from "lucide-react"
+import { Download } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 export function NavigationLinks() {
     return (
@@ -41,18 +42,25 @@ export function NavigationLinks() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <User className="h-6 w-6" />
+                    <Download className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Installation
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                      A step-by-step guide on how to download and configure your own, self-hosted, instance of Antimatter using Docker.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
+              <ListItem href="/docs" title="Engagements">
+                One place for all of your offensive project's findings.
+              </ListItem>
+              <ListItem href="/docs/" title="Vulnerabilities">
+                Atomic templates which can be imported into an engagement.
+              </ListItem>
+              <ListItem href="/docs/" title="Templating">
+                How to create custom templates for use within Antimatter.
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -67,3 +75,25 @@ export function NavigationLinks() {
     </NavigationMenu>
     )
 }
+
+const ListItem = (({ className, title, children, ...props }) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = "ListItem"
