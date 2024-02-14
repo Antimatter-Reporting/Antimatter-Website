@@ -53,7 +53,7 @@ export function NavigationLinks() {
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Engagements">
-                One place for all of your offensive project's findings.
+                One place for all of your offensive project&apos;s findings.
               </ListItem>
               <ListItem href="/docs/" title="Vulnerabilities">
                 Atomic templates which can be imported into an engagement.
