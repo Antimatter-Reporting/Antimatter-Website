@@ -10,7 +10,7 @@ export function PricingCards() {
             <div>
               <Badge>Self-Hosted</Badge>
               <h1 className="text-5xl font-bold pt-6">Free</h1>
-              <p className="text-gray-500 pt-2">Antimatter's free, self-hosted, plan. Perfect for control over your data.</p>
+              <p className="text-gray-500 pt-2">Antimatter&apos;s free, self-hosted, plan. Perfect for control over your data.</p>
             </div>
             <Button>Get Started</Button>
           </Card>
