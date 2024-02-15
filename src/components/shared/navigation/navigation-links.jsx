@@ -19,7 +19,7 @@ export function NavigationLinks() {
         <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
-          <Link href="#features" legacyBehavior scroll={true} passHref>
+          <Link href="/#features" legacyBehavior scroll={true} passHref>
             <NavigationMenuLink  className={navigationMenuTriggerStyle()}>
               Features
             </NavigationMenuLink>
@@ -29,6 +29,13 @@ export function NavigationLinks() {
           <Link href="/gallery" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Gallery
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/pricing" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Pricing
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -63,13 +70,6 @@ export function NavigationLinks() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/demo" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Demo
-            </NavigationMenuLink>
-          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

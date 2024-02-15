@@ -1,9 +1,10 @@
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
-import "./globals.css";
+import "@/styles/globals.css";
 
-import Navigation from '@/components/shared/navigation/navigation';
+import Navigation from '@/components/shared/navigation';
+import Footer from '@/components/shared/footer';
 
 export const metadata = {
   title: "Antimatter",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
