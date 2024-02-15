@@ -95,18 +95,18 @@
 
 @keyframes move {
   from {
-    transform: translateX(calc(-500px + 2rem));
+    transform: translateX(0px);
   }
   to {
-    transform: translateX(calc(-500px * 3));
+    transform: translateX(calc((-500px * 3) - 3rem));
   }
 }
 
 @keyframes move-reverse {
   to {
-    transform: translateX(calc(-500px + 2rem));
+    transform: translateX(0px);
   }
   from {
-    transform: translateX(calc(-500px * 3));
+    transform: translateX(calc((-500px * 3) - 3rem));
   }
 }
