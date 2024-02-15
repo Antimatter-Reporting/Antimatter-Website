@@ -47,7 +47,7 @@ export function NavigationLinks() {
                 <NavigationMenuLink asChild>
                   <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/docs"
+                    href="/docs/install"
                   >
                     <Download className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
@@ -59,13 +59,13 @@ export function NavigationLinks() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Engagements">
+              <ListItem href="/docs/install" title="Engagements">
                 One place for all of your offensive project&apos;s findings.
               </ListItem>
-              <ListItem href="/docs/" title="Vulnerabilities">
+              <ListItem href="/docs/install" title="Vulnerabilities">
                 Atomic templates which can be imported into an engagement.
               </ListItem>
-              <ListItem href="/docs/" title="Templating">
+              <ListItem href="/docs/install" title="Templating">
                 How to create custom templates for use within Antimatter.
               </ListItem>
             </ul>

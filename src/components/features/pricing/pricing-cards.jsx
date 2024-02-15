@@ -20,7 +20,7 @@ export function PricingCards() {
               <div className="flex flex-row gap-1 items-end pt-6"><h1 className="text-5xl font-bold">£19.99</h1><p className="text-lg font-bold">/mo</p></div>
               <p className="text-gray-500 pt-2">Coming Soon - Antimatter hosted in the cloud with little configuration required.</p>
             </div>
-            <Button>Buy Now</Button>
+            <Button disabled={true}>Buy Now</Button>
           </Card>
         </div>
     )
